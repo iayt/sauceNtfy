@@ -1,0 +1,35 @@
+body {font-family:trebuchet ms, tahoma, sans-serif; font-size:13px}
+h1 {font-size:21px; padding:20px 0; color:#900000}
+
+.uyelikFormu {margin:20px}
+
+/* FormArea */
+.formArea {margin:0; text-align:left}
+	.formArea form div{margin:0 0 10px 0}
+	.formArea div > span{margin-bottom:5px;display:inline-block; width:140px; vertical-align:top; padding:5px 0 0 0;}
+	.formArea div span{font-size:15px}
+	.formArea div span i{color:#900}
+	.formArea div span.info{font-size:9px;color:#999}
+	.formArea input,.formArea select,.formArea textarea,.formArea button{outline:none}
+	.formArea div input[type=text],.formArea div input[type=password]{border:1px solid #ddd;padding:5px 5px;width:200px;color:#666;font-size:13px;margin:0 0 3px 0}
+	.formArea div select{border:1px solid #ddd;padding:5px 5px;width:210px;color:#666;font-size:13px;margin:3px 5px 3px 0}
+	.formArea div select option[value=""] {color:#900000;font-weight:bold}
+	.formArea div input[type=checkbox]{margin-right:5px;cursor:pointer}
+	.formArea div textarea{border:1px solid #ddd;padding:5px 5px;width:400px;height:120px;color:#666;font-size:13px;margin:3px 5px 3px 0; resize: none;}
+	.formArea span.ikili{width:215px;display:inline-block}
+	.formArea button{width:105px;height:32px;margin-left:150px;line-height:33px;display:inline-block;background:#900;color:#fff;font-weight:bold;text-align:center; border-radius:3px; cursor:pointer}
+	.formArea button:hover{background:#700}
+	.formArea .altLink1 {color:#732a7c}
+	.formArea .altLink1:hover {text-decoration:underline}
+	.formArea div .ks {width:92px !important}
+	.formArea div .kss {width:63px !important}
+	
+	.formArea h1 {font-weight:bold; margin-bottom:10px; text-align:center}
+	.formArea h1, .formArea h2, .formArea h3, .formArea h4, .formArea h5, .formArea h6 {font-weight:bold; color:#19278c; line-height:200%}
+	.formArea h1 {font-size:18px}
+	.formArea h2 {font-size:16px}
+	.formArea h3 {font-size:14px}
+	.formArea h4 {font-size:13px}
+	.formArea h5 {font-size:12px}
+	
+	.formArea .err {border:1px solid #900}
