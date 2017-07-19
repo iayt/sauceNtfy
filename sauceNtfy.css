@@ -1,0 +1,8 @@
+.sauceNtfy {text-align:left; position:relative; font:normal 13px/18px "Trebuchet MS"; background:#E3ECFF url(icons/info.png) no-repeat 14px center;border:1px solid #C4D7FF;color:#516574;-webkit-border-radius:3px; -moz-border-radius:3px; border-radius:3px; margin-bottom:5px;}
+.sauceNtfy > div {padding:10px 10px 10px 40px;}
+.sauceNtfy .close {position:absolute; background:url(icons/cross.png) no-repeat center top; width:20px; height:20px; right:0px; top:0px; cursor:pointer; display:block;}
+.sauceNtfy.alert {background:#FFF0D3 url(icons/alert.png) no-repeat 14px center;border-color:#FFD680;color:#8B7748;}
+.sauceNtfy.error  {background:#FFDEDE url(icons/error.png) no-repeat 14px center;border-color:#FFB0B0;color:#7D2B2B;}
+.sauceNtfy.true {background:#BEE2C2 url(icons/true.png) no-repeat 14px center;border-color:#59B564;color:#2D5331;}
+.sauceNtfy.info {background:#E3ECFF url(icons/info.png) no-repeat 14px center;border-color:#C4D7FF;color:#516574;}
+.sauceNtfy.loading {background:#FFF0D3 url(icons/loading.gif) no-repeat 7px center;border-color:#FFD680;color:#8B7748;}
