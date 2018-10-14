@@ -8,7 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	
-	<script src="js/jquery-1.11.1.min.js" type="text/javascript"></script>
+	<!-- <script src="js/jquery-1.11.1.min.js" type="text/javascript"></script> -->
 	
 	<!-- sauceNtfy => https://github.com/iayt/sauceNtfy.git -->
 	<link rel="stylesheet" type="text/css" href="../sauceNtfy.css">
@@ -24,6 +24,8 @@
 
 			<div><span><b>*</b> E-Posta </span>: 		<input type="text" name="email" class="must"></div>
 			<div><span><b>*</b> Şifre </span>: 			<input type="text" name="pass" class="must"></div>
+
+			<input type="hidden" name="lang" value="en">
 			<br>
 
 			<div><button type="submit">GİRİŞ</button></div>
@@ -34,10 +36,10 @@
 	
 	<script>
 
-		$("#uyelikForm").sauceNtfy({
-			type: 'error',		// loading/error/info/true (default:error)
-			text: '- Bir hata oluştu.<br>- Lütfen zorunlu alanları doldurun.'
-		});
+		var signinForm = new sauceNtfy({
+				id: 'uyelikForm',
+				text: '- Bir hata oluştu.<br>- Lütfen zorunlu alanları doldurun.'
+			});
 
 	</script>
 	

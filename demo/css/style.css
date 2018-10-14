@@ -5,7 +5,7 @@ h1 {font-size:21px; padding:20px 0; color:#900000}
 
 /* FormArea */
 .formArea {margin:0; text-align:left}
-	.formArea form div{margin:0 0 10px 0}
+	.formArea form div{/* margin:0 0 10px 0 */}
 	.formArea div > span{margin-bottom:5px;display:inline-block; width:140px; vertical-align:top; padding:5px 0 0 0;}
 	.formArea div span{font-size:15px}
 	.formArea div span i{color:#900}

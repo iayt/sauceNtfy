@@ -1,32 +1,33 @@
-$.fn.sauceNtfy = function(config){
+(function() {
+	
+	this.sauceNtfy = function(arg) {
+	
+		const config = {
+			id:				arg.id,
+			text:			(!arg.text)		? '' 			: arg.text,
+			type: 		(!arg.type) 	? 'error' : arg.type,		// type: loading/error/true/hide
+			time:			(!arg.time)		? ''			: arg.time		// ekranda kalacağı sn
+		};
 
-	var config = $.extend({
-		id: this[0].id, 				// Id'si
-		text: '',						// text
-		type: 'error',					// type: loading/error/true/hide
-		time: ''						// ekranda kalacağı sn
-	}, config);
+
+		const ntfyID = '#'+config.id;
+		const domNtfyID = document.querySelector(ntfyID);
+
+		if (document.querySelectorAll('.sauceNtfy').length > 0){
+			document.querySelector(ntfyID).removeChild(document.querySelector('.sauceNtfy'));
+		}
+
+		if(config.type != 'hide'){
+			domNtfyID.insertAdjacentHTML('afterbegin', '<div class="sauceNtfy '+config.type+'"><div><i class="close"></i><div>'+config.text+'</div></div></div>');
+		}
 
 
-	$(".sauceNtfy").remove();
+		
+		document.querySelector('.close').addEventListener('click', function(){
+			document.querySelector('.sauceNtfy').parentNode.removeChild(document.querySelector('.sauceNtfy'));
+		});
 
-	if (config.type !== 'hide'){
-		$("#"+config.id).before('<div class="sauceNtfy '+config.type+'" style="display:none"></div>');
-		$("#"+config.id).prev(".sauceNtfy").html('<div><i class="close"></i><div>'+config.text+'</div></div>');
-		$(".sauceNtfy").slideDown();
+
 	}
 
-	if (config.time !== ''){
-		setTimeout(
-			function(){
-				$(".sauceNtfy").slideUp('normal', function(){$(".sauceNtfy").remove()});
-			},(1000*config.time)
-		);
-	}
-
-}
-
-
-$(document).on("click",".close",function(){
-	$(this).parents(".sauceNtfy").slideUp('normal', function(){$(".sauceNtfy").remove()});
-});
+}());
